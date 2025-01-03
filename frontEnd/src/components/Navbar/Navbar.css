@@ -1,0 +1,108 @@
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+}
+
+.navbar-menu{
+    display:flex;
+    gap:20px;
+    list-style: none;
+    color:crimson;
+    font-size: 18px;
+    cursor: pointer;
+}
+.navbar-right{
+    display:flex;
+    gap:40px;
+    align-items: center;
+}
+.navbar button{
+    background: transparent;
+    color: rgb(7, 6, 6);
+    font-size: 16px;
+    border: 2px solid rgb(171, 47, 25);
+    border-radius:50px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.navbar button:hover{
+    background-color: tomato;
+
+}
+.navbar .active{
+    padding-bottom:3px;
+    border-bottom: 3px solid #49557e;
+   
+}
+.navbar-cart-icon{
+    position: relative;
+}
+.navbar-cart-icon .dot{
+    position:absolute;
+    min-width: 10px;
+    min-height: 10px;
+    background-color: tomato;
+    border-radius: 6px;
+    top:-8px ;
+    right: -3px;
+}
+@media (max-width:1050px){
+    .navbar.logo{
+        width: 120px;
+
+    }
+    .navbar-menu{
+        gap:15px;
+        font-size: 15px;
+    }
+    .navbar-right{
+        gap:20px;
+
+    }
+    .navbar-right img{
+        width: 20px;
+    }
+    .navbar button{
+        padding: 7px 20px;
+    }
+}
+.navbar-profile{
+    position: relative;
+}
+.navbar-profile-dropdown{
+    position: absolute;
+    display: none;
+    z-index:1;
+    right:0;
+}
+.navbar-profile:hover .navbar-profile-dropdown{
+    display:flex;
+    flex-direction: column;
+    background-color: azure;
+    border-radius: 5px;
+    gap:10px;
+    padding: 12px 25px;
+    list-style: none;
+    border: 1px solid tomato;
+    outline: 2px solid white;
+}
+.navbar-profile-dropdown li{
+    display:flex;
+    align-items: center;
+    gap:10px;
+    cursor:pointer;
+}
+.navbar-profile-dropdown li:hover{
+    color: tomato;
+}
+.navbar-profile-dropdown img{
+    width:20px;
+}
+@media(max-width:750px){
+    .navbar-menu{
+        display: none;
+    }
+}
