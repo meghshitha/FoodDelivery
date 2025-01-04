@@ -9,7 +9,7 @@ const Orders = ({url}) => {
   const [orders,setOrders] = useState([]);
 
   const fetchAllOrders = async()=>{
-    const response = await axios.get("http://localhost:4000/api/order/list")
+    const response = await axios.get("https://fooddelivery-vr8a.onrender.com/api/order/list")
     if(response.data.success){
       setOrders(response.data.data)
       console.log(response.data.data)

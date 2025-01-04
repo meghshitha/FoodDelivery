@@ -4,7 +4,7 @@ import { assets } from '../../assets/assets'
 import axios from 'axios'
 import {toast} from 'react-toastify'
 
-const url='http://localhost:4000'
+const url='https://fooddelivery-vr8a.onrender.com'
 const Add = () => {
     const [image,setImage] = useState(false)
     const [data,setdata] = useState({name:'',description:'',price:'',category:'salad'})
